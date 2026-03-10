@@ -1,6 +1,49 @@
 *{
     font-family: "Roboto", sans-serif;
 }
+.more-about{
+    transition: all 0.6s;
+}
+.more-about::before{
+    margin-right: 5px;
+    display: inline-block;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-image: url(./svg/strelka_vpravo_tfqhuc87md87.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.more-about:hover{
+    background-color: blue;
+}
+.main-input::placeholder{
+    color: red;
+}
+.main-button{
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    border: 1px solid white;
+    background-color: blue;
+    color: #ffffff;
+    border-radius: 20px;
+    transition: all 0.6s;
+}
+.main-button:active{
+    width: 190px;
+    height: 25px;
+    background-color: gray;
+}
+.checkbox :checked ~ label{
+    color: red;
+}
+.more-about:hover::before{
+    background-image: none;
+    width: 0;
+    height: 0;
+    margin-right: 0;
+}
 .crestic{
     font-size: 40px;
     position: absolute;
