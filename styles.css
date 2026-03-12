@@ -1,5 +1,62 @@
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes from-lightgray-to-gray {
+    from { background-color: lightgray; }
+    to { background-color: gray; }
+}
+@keyframes up-to-down {
+    from { height: 10% }
+    to { height: 100% }
+}
+@keyframes round-to-square {
+    from { width: 10px; height: 10px;}
+    50%{ width: 100px; height: 10px;}
+    to { width: 100px; height: 100px;  }
+}
 *{
     font-family: "Roboto", sans-serif;
+}
+.sceleton{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    animation: from-lightgray-to-gray 1s alternate infinite ease-in;
+}
+.accordeon{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    animation: up-to-down 2s ease-in;
+    background-color: black;
+}
+.round{
+    display: inline-block;
+    animation: round-to-square 2s ease-in;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: red;
+}
+.container{
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.spinner{
+    animation: spin 3s infinite linear;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-image: url("./svg/spinner-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .more-about{
     transition: all 0.6s;
