@@ -67,6 +67,9 @@
     width: 0;
     height: 0;
 }
+.main-checkbox-container{
+    width: 130px;
+}
 .custom-checkbox-label{
     display: flex;
     align-items: center;
@@ -89,7 +92,7 @@
 .main-checkbox-input:checked + .main-checkbox-custom::after{
     content: "";
     position: absolute;
-    top: 5px;
+    top: 7px;
     left: 11px;
     width: 6px;
     height: 10px;
